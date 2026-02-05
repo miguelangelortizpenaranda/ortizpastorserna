@@ -8,6 +8,7 @@
 Este repositorio tiene como cometido agrupar los ficheros de código fuente referentes al boque de bandido de k-brazos, así como al módulo de aprendizaje en entornos complejos.
 ## Estructura
 ortizpastorserna (github)
+```
 |__ informe.pdf # Informe técnico (se espera unas 10 páginas)
 |__ main.ipynb # Fichero principal que accede a los distintos main.ipynb de cada parte
 |__ k_brazos
@@ -30,6 +31,7 @@ ortizpastorserna (github)
 | # Breve introducción del problema y enlace a los estudios.
 |__ notebook1.ipynb # P.e. presentación de métodos tabulares
 |__ etc.ipynb # Recuerde poner tantos como estudios realizados
+```
 ## Instalación y Uso
 ...
 ## Tecnologías Utilizadas
