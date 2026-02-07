@@ -22,11 +22,11 @@ class Algorithm(ABC):
         Inicializa el algoritmo con k brazos.
         :param k: Número de brazos.
         """
-        # Número de brazos
+        # Número de brazos (K)
         self.k: int = k
-        # Número de veces que se ha seleccionado cada brazo
+        # Número de veces que se ha seleccionado cada brazo (N)
         self.counts: np.ndarray = np.zeros(k, dtype=int)
-        # Recompensa promedio estimada de cada brazo
+        # Recompensa promedio estimada de cada brazo (Q)
         self.values: np.ndarray = np.zeros(k, dtype=float)
 
     @abstractmethod
