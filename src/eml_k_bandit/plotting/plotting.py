@@ -18,7 +18,7 @@ import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-from algorithms import Algorithm, EpsilonGreedy, UCB1
+from algorithms import Algorithm, EpsilonGreedy, UCB1, Softmax
 
 def get_algorithm_label(algo: Algorithm) -> str:
     """
@@ -34,6 +34,8 @@ def get_algorithm_label(algo: Algorithm) -> str:
         label += f" (epsilon={algo.epsilon})"
     elif isinstance(algo, UCB1):
         label += f" (c={algo.c})"
+    elif isinstance(algo, Softmax):
+        label += f" (temperature={algo.temperature})"
     # elif isinstance(algo, OtroAlgoritmo):
     #     label += f" (parametro={algo.parametro})"
     # Añadir más condiciones para otros algoritmos aquí
