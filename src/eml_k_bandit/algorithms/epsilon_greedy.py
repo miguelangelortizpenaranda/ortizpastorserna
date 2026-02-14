@@ -40,7 +40,7 @@ class EpsilonGreedy(Algorithm):
         :return: índice del brazo seleccionado.
         """
 
-        # Observa que para para epsilon=0 solo selecciona un brazo y no hace un primer recorrido por todos ellos.
+        # Observa que para epsilon=0 solo selecciona un brazo y no hace un primer recorrido por todos ellos.
         # ¿Podrías modificar el código para que funcione correctamente para epsilon=0?
         if self.epsilon == 0:
             zeros = np.flatnonzero(self.counts == 0)

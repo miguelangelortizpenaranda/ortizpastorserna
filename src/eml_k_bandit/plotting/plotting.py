@@ -84,7 +84,7 @@ def plot_optimal_selections(steps: int, optimal_selections: np.ndarray, algorith
         plt.plot(range(steps), optimal_selections[idx], label=label, linewidth=2)
 
     plt.xlabel('Pasos de Tiempo', fontsize=14)
-    plt.ylabel('Selecciones óptimas', fontsize=14)
+    plt.ylabel('Selecciones óptimas (%)', fontsize=14)
     plt.title('Selecciones óptimas vs Pasos de Tiempo', fontsize=16)
     plt.legend(title='Algoritmos')
     plt.tight_layout()
