@@ -58,13 +58,14 @@ class ArmNormal(Arm):
         return f"ArmNormal(mu={self.mu}, sigma={self.sigma})"
 
     @classmethod
-    def generate_arms(cls, k: int, mu_min: float = 1, mu_max: float = 10.0):
+    def generate_arms(cls, k: int, mu_min: float = 1, mu_max: float = 10.0, sigma: float = 1.0):
         """
         Genera k brazos con medias únicas en el rango [mu_min, mu_max].
 
         :param k: Número de brazos a generar.
         :param mu_min: Valor mínimo de la media.
         :param mu_max: Valor máximo de la media.
+        :param sigma: Valor de la desviación en la distribución normal.
         :return: Lista de brazos generados.
         """
         assert k > 0, "El número de brazos k debe ser mayor que 0."
@@ -78,7 +79,6 @@ class ArmNormal(Arm):
             mu_values.add(mu)
 
         mu_values = list(mu_values)
-        sigma = 1.0
 
         arms = [ArmNormal(mu, sigma) for mu in mu_values]
 
